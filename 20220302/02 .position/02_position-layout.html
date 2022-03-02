@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{width: 550px;
+             margin: 10px;}
+        #header{border: 1px solid green;
+                height: 100px;}
+        #container{position: relative;
+                   border: 1px solid darkblue;
+                   height: 400px;}
+        .sidebar{border: 1px solid red;
+                 position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 width: 250px;height: 400px;}
+        .content{border: 1px solid red;
+                 position: absolute;
+                 top: 0px;
+                 left: 251px;
+                 width: 297px;height: 400px;}
+        #footer{border: 1px solid green;
+                height: 100px;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1>헤더</h1>
+    </div>
+    <div id="container">
+        <div class="sidebar">
+            사이드바
+        </div>
+        <div class="content">
+            컨텐츠
+        </div>
+    </div>
+    <div id="footer">
+        <h1>푸터</h1>
+    </div>
+</body>
+</html>
