@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+        window.onload = function(){ 
+               var myList = 
+                 document.getElementsByTagName("ul");
+                 console.log(myList);
+             // ul#list
+             console.log(myList[0]);
+             // ul#list의 자식전체(태그+텍스트)
+             console.log(myList[0].childNodes);
+             // ul#list의 자식(태그만)
+             console.log(myList[0].children);
+             // ul#list의 첫 번째 자식(텍스트도 포함)
+             console.log(myList[0].firstChild);
+
+             // myList[0].chidren의 0번째요소인
+             // li저장하기
+             var childLi = myList[0].children[0];
+             console.log(childLi);
+             
+             // childLi(parentNode가 있는 li태그)
+             // 부모 다시 얻기
+             console.log(childLi.parentNode);
+
+             // nextSibling(형제태그)
+             // parentNode라고 적힌 li의 다음 형제
+             console.log(childLi.nextSibling);
+    };
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>선택자</h1>    
+        <h2>근거리 선택자</h2>
+         <ul id="list">
+             <li>parentNode</li>
+             <li>childNodes</li>
+             <li>children</li>
+             <li>firstChild</li>
+             <li>previousSibling</li>
+             <li>nextSibling</li>
+         </ul>
+     </div>
+</body>
+</html>
